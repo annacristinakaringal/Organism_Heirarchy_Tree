@@ -217,10 +217,13 @@ void binary_tree::find_and_combine_closest_trees(list<binary_tree> &trees) throw
     list <binary_tree>::iterator it1;
     for (it1=trees.begin(); it1!=trees.end(); it1++){;
 
+        // Set second iterator to position after first iterator
+        list <binary_tree>::iterator it2 = it1;
+        it2++;
+
         // Compare to nodes after current node
         // We've already compared nodes before current node to each other
-        list <binary_tree>::iterator it2;
-        for (it2=next(it1, 1); it2!=trees.end(); it2++){
+        for (it2; it2!=trees.end(); it2++){
             
             // Two different organisms have same name. Throw exception.
             if (it1->get_root_name() == it2->get_root_name()) {
