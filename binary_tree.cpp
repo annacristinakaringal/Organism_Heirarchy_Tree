@@ -279,7 +279,7 @@ void binary_tree::find_and_combine_closest_trees(list<binary_tree> &trees) throw
 }
 
 /* A protected function that */
-string binary_tree::print_tree(tree_node *tn_ptr) const throw (out_of_range){
+string binary_tree::print_tree(tree_node *tn_ptr) const {
     
     // If tree node is not a leaf node, recursively call the print function on
     // its left and right subtrees until reach a leaf node
@@ -289,10 +289,6 @@ string binary_tree::print_tree(tree_node *tn_ptr) const throw (out_of_range){
     // Single node tree or leaf node: Print name of organism
     else if (height_of_node(tn_ptr) == 0) {
         return tn_ptr->name;
-    }
-    // Invalid height, throw exception
-    else {
-        throw out_of_range("Invalid tree height");
     }
 }
 

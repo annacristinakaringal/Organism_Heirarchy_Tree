@@ -28,15 +28,19 @@
 
 using namespace std;
 
+
+/******************************************************************************
+                                MAIN PROGRAM
+ ******************************************************************************/
+
 int main(int argc, const char * argv[]) {
 
-    if (argc == 2) {
+    if (argc == 2) { // Input file given as argument in command line
     
-        // Open file
+        // Open file from command line argument
         string fName = argv[1];
         ifstream readf;
         readf.open("organisms.txt");
-        
         
         // If file open fails
         if (readf.fail()){
@@ -44,13 +48,13 @@ int main(int argc, const char * argv[]) {
             exit(-1);
         }
         
+        // A list of binary trees to store all single node trees read from file
         list<binary_tree> all_single_org_trees;
         
         if (readf.is_open()) {
             
-            string org_line;
-            
             // Reads each line of the file
+            string org_line;
             while (getline(readf,org_line)) {
                 
                 try {
@@ -68,14 +72,13 @@ int main(int argc, const char * argv[]) {
                     
                 }
                 catch (bad_alloc& ba) {
+                    // Catch any memory allocation errors and exit
                     cerr << "ERROR: Failure to allocate memory while reading file" << endl;
                     exit(-1);
                 }
                 catch (invalid_argument& ia){
+                    // Catch any invalid lines from file. Print to error stream and skip over.
                     cerr << "ERROR: Invalid Organism. " << ia.what() << endl;
-                }
-                catch (...) {
-                    cerr << "ERROR: Undefined."<< endl;
                 }
             }
         }
@@ -92,18 +95,19 @@ int main(int argc, const char * argv[]) {
         }
         
         catch (bad_alloc& ba) {
+            // Catch any memory allocation errors and exit
             cerr << "ERROR: Failure to allocate memory while constructing tree." << endl;
             exit(-1);
         }
         catch (invalid_argument &ia) {
+            // Catch any invalid arguments, e.g. if no organisms in list. 
+            // Tell user cause of error and exit.
             cerr << "ERROR: Unable to construct tree. " << ia.what() << endl;
-        }
-        catch (out_of_range &oor) {
-            cerr << "ERROR: Out of Range. " << oor.what() << endl;
+            exit(-1);
         }
     }
 
-    else { // Invalid number of command line arguments. Exit with errors
+    else { // Invalid number of command line arguments. Exit with errors.
         cerr << "ERROR: Invalid number of arguments" << endl;
         cerr << "Please run the program by typing into the terminal './binary_tree organisms.txt' where organisms.txt is the name of your input file." << endl;
 

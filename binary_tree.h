@@ -53,7 +53,7 @@ protected:
     int height_of_node (tree_node *tn_ptr) const;
 
     // Helps overloaded friend function
-    string print_tree (tree_node *tn_ptr) const throw (out_of_range);
+    string print_tree (tree_node *tn_ptr) const;
     
 public:
     
