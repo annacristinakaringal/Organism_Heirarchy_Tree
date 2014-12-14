@@ -3,9 +3,12 @@
  Author         : Anna Cristina Karingal
  Created on     : December 6, 2014
  
- Description    :
+ Description    : Constructs a binary tree from a given input file of organisms
+                    and their genome scores. This binary tree represents how
+                    closely related an organism is to others based on their 
+                    genome scores.
  
- Purpose        : Demonstrate an implementation of a binary tree class
+ Purpose        : To demonstrate an implementation of a binary tree class.
  
  Usage          : ./binary_tree organisms.txt
  (organisms.txt is the file path and name of the songs file and is
