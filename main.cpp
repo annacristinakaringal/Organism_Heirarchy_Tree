@@ -105,9 +105,7 @@ int main(int argc, const char * argv[]) {
 
     else { // Invalid number of command line arguments. Exit with errors
         cerr << "ERROR: Invalid number of arguments" << endl;
-        cerr << "Please run the program by typing into the terminal" << endl;
-        cerr << "     ./binary_tree organisms.txt" << endl;
-        cerr << "where organisms.txt is the name of your input file." << endl;
+        cerr << "Please run the program by typing into the terminal './binary_tree organisms.txt' where organisms.txt is the name of your input file." << endl;
 
         exit(-1);
     }
