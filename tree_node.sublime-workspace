@@ -1,0 +1,436 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"redirect",
+				"redirect_to"
+			],
+			[
+				"del",
+				"delete"
+			],
+			[
+				"font",
+				"font-family"
+			],
+			[
+				"do",
+				"dob	Insert do |variable| … end"
+			],
+			[
+				"i",
+				"italic"
+			],
+			[
+				"list",
+				"list-style-image"
+			],
+			[
+				"tex",
+				"text-decoration"
+			],
+			[
+				"margin",
+				"margin-top"
+			],
+			[
+				"font-",
+				"font-style"
+			],
+			[
+				"text",
+				"text-transform"
+			],
+			[
+				"bac",
+				"background-image"
+			],
+			[
+				"a",
+				"a"
+			],
+			[
+				"text-",
+				"text-align"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"selected_items":
+		[
+		],
+		"width": 392.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/Anna/Desktop/hello.cpp",
+		"/Users/Anna/Desktop/235 Assignment 3/235 Assignment 3/myfile.txt",
+		"/Users/Anna/Dropbox/edX - CS169.1x Saas/README.md",
+		"/Users/Anna/Desktop/stackoverflowquestion.txt",
+		"/Users/Anna/Desktop/235 Assignment 3/.gitignore",
+		"/Users/Anna/Desktop/authnet/config.php",
+		"/Users/Anna/Desktop/ROIR/10ftsunset/index.php",
+		"/Users/Anna/Documents/page.php",
+		"/Users/Anna/Desktop/A - Site Build/popmovies.php",
+		"/Users/Anna/Dropbox/!!! SCHOOL/2014 FALL/CSCI 232/bank.sql",
+		"/Users/Anna/Dropbox/!!! SCHOOL/2014 FALL/CSCI 232/HW/4a.sql",
+		"/Users/Anna/Dropbox/!!! SCHOOL/2014 FALL/CSCI 232/HW/HW 3/create.sql",
+		"/Users/Anna/Dropbox/!!! SCHOOL/2014 FALL/CSCI 235/10-08 Notes.txt",
+		"/Users/Anna/projects/ruby_practice/numbers.rb",
+		"/Users/Anna/projects/ruby_practice/megagreeter.rb",
+		"/Users/Anna/Dropbox/!!! SCHOOL/2014 FALL/CSCI 235/demo_docs/documentation_style/functiondemo02.cpp",
+		"/Users/Anna/projects/hunter/235-01_Anagrams/dictionary.h",
+		"/Users/Anna/projects/hunter/235-01_Anagrams/menu.h",
+		"/Users/Anna/projects/hunter/235-01_Anagrams/dictionary.cpp",
+		"/Users/Anna/projects/hunter/235-01_Anagrams/anagrams.sublime-project",
+		"/Users/Anna/Dropbox/!!! SCHOOL/2014 FALL/CSCI 235/09-29 Notes.text",
+		"/Users/Anna/projects/hunter/235-01_Anagrams/recursive_anagrams.cpp",
+		"/Users/Anna/projects/hunter/235-01_Anagrams/menu.cpp",
+		"/Users/Anna/projects/hunter/235-01_Anagrams/anagrams.h",
+		"/Users/Anna/projects/hunter/235-01_Anagrams/anagrams.cpp",
+		"/Users/Anna/Desktop/junk.cpp",
+		"/Users/Anna/projects/railsbridge/job_board/app/models/job.rb",
+		"/Users/Anna/projects/railsbridge/job_board/app/models/user.rb",
+		"/Users/Anna/projects/railsbridge/job_board/Gemfile",
+		"/Users/Anna/projects/railsbridge/job_board/config/environments/test.rb",
+		"/Users/Anna/projects/railsbridge/job_board/config/environments/development.rb",
+		"/Users/Anna/projects/railsbridge/job_board/app/views/layouts/application.html.erb",
+		"/Users/Anna/projects/railsbridge/job_board/config/routes.rb",
+		"/Users/Anna/projects/railsbridge/job_board/app/controllers/jobs_controller.rb",
+		"/Users/Anna/projects/railsbridge/job_board/app/views/jobs/index.html.erb",
+		"/Users/Anna/projects/railsbridge/job_board/app/views/jobs/_form.html.erb",
+		"/Users/Anna/projects/railsbridge/job_board/app/views/jobs/edit.html.erb",
+		"/Users/Anna/projects/railsbridge/job_board/app/views/jobs/new.html.erb",
+		"/Users/Anna/projects/railsbridge/job_board/app/assets/stylesheets/nav.css.scss",
+		"/Users/Anna/projects/railsbridge/job_board/app/assets/stylesheets/global.css.scss",
+		"/Users/Anna/projects/railsbridge/job_board/app/assets/stylesheets/application.css",
+		"/Users/Anna/projects/railsbridge/job_board/db/migrate/20140927160048_create_jobs.rb",
+		"/Users/Anna/projects/railsbridge/job_board/Rakefile",
+		"/Users/Anna/projects/railsbridge/notes 09_27_14",
+		"/Users/Anna/projects/railsbridge/job_board/config/application.rb",
+		"/Users/Anna/projects/railsbridge/job_board/app/assets/javascripts/application.js",
+		"/Users/Anna/projects/railsbridge/jobboard_ schema.txt",
+		"/Applications/Sublime Text.app/Contents/MacOS/changelog.txt",
+		"/Users/Anna/railsbridge/test_app/routes.rb",
+		"/Users/Anna/railsbridge/gemfile.lock",
+		"/Users/Anna/railsbridge/test_app/.git/COMMIT_EDITMSG",
+		"/Users/Anna/railsbridge/test_app/gemfile",
+		"/Users/Anna/rails_projects/sample_app/.gitignore",
+		"/Users/Anna/rails_projects/sample_app/Gemfile",
+		"/Users/Anna/rails_projects/sample_app/config/initializers/secret_token.rb",
+		"/Users/Anna/sample_app/Gemfile",
+		"/Users/Anna/Desktop/python/practice_random.py",
+		"/Users/Anna/Desktop/python/gdi3.py",
+		"/Users/Anna/Desktop/python/practice_adventure.py",
+		"/Users/Anna/rails_projects/demo_app/app/models/user.rb",
+		"/Users/Anna/rails_projects/demo_app/app/models/micropost.rb",
+		"/Users/Anna/Desktop/python/knights.py",
+		"/Users/Anna/Desktop/python/practice_adventure2.py",
+		"/Users/Anna/Desktop/python/geometry.py",
+		"/Users/Anna/rails_projects/first_app/Gemfile",
+		"/Users/Anna/.ssh/config",
+		"/Users/Anna/rails_projects/first_app/.gitignore",
+		"/Users/Anna/rails_projects/first_app/README.md",
+		"/Users/Anna/Desktop/python/gid2.py",
+		"/Users/Anna/.gemrc",
+		"/Users/Anna/Desktop/python/gdi1.py",
+		"/Users/Anna/Desktop/python/gdi2.py",
+		"/Users/Anna/Desktop/python/pratice_adventure.py",
+		"/Users/Anna/Desktop/python/pratice_grading.py",
+		"/Users/Anna/Dropbox/WORK/ack.com/about.php",
+		"/Users/Anna/Dropbox/WORK/ack.com/footer.php",
+		"/Users/Anna/Dropbox/WORK/ack.com/header.php",
+		"/Users/Anna/Dropbox/WORK/ack.com/index.php",
+		"/Users/Anna/Desktop/prog practice/highestprime.cpp",
+		"/Users/Anna/Desktop/prog practice/mult_of_3_and_5.cpp",
+		"/Users/Anna/Dropbox/WORK/ack.com/css/main.css",
+		"/Users/Anna/Dropbox/WORK/ack.com/css/main",
+		"/Users/Anna/Desktop/prog practice/temp_conversion.cpp",
+		"/Users/Anna/Desktop/c++ practice june 2014/temp_conversion.cpp",
+		"/Users/Anna/Desktop/c++ practice june 2014/integer_to_eng.cpp",
+		"/Users/Anna/Desktop/c++ practice june 2014/integer_to_eng",
+		"/Users/Anna/Desktop/ROIR/ROIR News Backup 5-28-14/NEW/wp-config.php",
+		"/Users/Anna/Desktop/ROIR/ROIR News Backup 5-28-14/NEW/wp-config-sample.php",
+		"/Users/Anna/Downloads/wp-config.php",
+		"/Users/Anna/Desktop/reports.cpp",
+		"/Users/Anna/Desktop/items.txt",
+		"/Users/Anna/Desktop/sales.txt",
+		"/Users/Anna/Desktop/client.cpp",
+		"/Users/Anna/Desktop/notes",
+		"/Users/Anna/Desktop/A - Site Build/signin.php",
+		"/Users/Anna/Desktop/A - Site Build/regform.php",
+		"/Users/Anna/Desktop/A - Site Build/css/streamline.css",
+		"/Users/Anna/Desktop/A - Site Build/header.php",
+		"/Users/Anna/Desktop/A - Site Build/signform.php",
+		"/Users/Anna/Desktop/A - Site Build/connect.php",
+		"/Users/Anna/Desktop/A - Site Build/register.php",
+		"/Users/Anna/Desktop/A - Site Build/welcome.php",
+		"/Users/Anna/Desktop/A - Site Build/regsuccess.php",
+		"/Users/Anna/Desktop/A - Site Build/nav.php",
+		"/Users/Anna/Desktop/A - Site Build/si.php",
+		"/Users/Anna/Desktop/A - Site Build/test.html",
+		"/Users/Anna/Desktop/A - Site Build/bootstrapvalidator.html",
+		"/Users/Anna/Desktop/A - Site Build/insert.php",
+		"/Users/Anna/Desktop/A - Site Build/login_successful.php",
+		"/Users/Anna/Desktop/A - Site Build/index.php",
+		"/Users/Anna/Desktop/A - Site Build/lead.php",
+		"/Users/Anna/Desktop/A - Site Build/css/bootstrap.min.css",
+		"/Users/Anna/Desktop/A - Site Build/supported.php",
+		"/Users/Anna/Desktop/A - Site Build/new.php",
+		"/Users/Anna/Desktop/A - Site Build/poptv.php",
+		"/Users/Anna/Desktop/A - Site Build/services.php",
+		"/Users/Anna/Dropbox/MEDP 341/Assignment 02/index.html",
+		"/Users/Anna/Desktop/A - Site Build/landing.html",
+		"/Users/Anna/Desktop/A - Site Build/footbar.php",
+		"/Users/Anna/Desktop/A - Site Build/footer.php",
+		"/Users/Anna/Desktop/A - Site Build/index.html",
+		"/Users/Anna/Dropbox/CSCI 135 & 136/Homework/HW2/main.cpp",
+		"/Users/Anna/Dropbox/CSCI 135 & 136/Homework/HW2/image.cpp",
+		"/Users/Anna/Dropbox/CSCI 135 & 136/Homework/hw2.cpp",
+		"/Users/Anna/Dropbox/CSCI 135 & 136/Homework/HW2/image.h",
+		"/Users/Anna/Dropbox/CSCI 135 & 136/LABS/lab10.cpp",
+		"/Users/Anna/Desktop/ROIR/10ftsunset/style.css",
+		"/Users/Anna/Desktop/ROIR/10ftsunset/footer.php"
+	],
+	"find":
+	{
+		"height": 26.0
+	},
+	"find_in_files":
+	{
+		"height": 93.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"/Users/Anna/Dropbox/CSCI 135 & 136/Extra Credit/135 extra credit/135 extra credit/",
+			";\n",
+			"streamline",
+			"futura",
+			"mypassword",
+			"myusername",
+			"1.42857143",
+			".navbar-nav .open .dropdown-menu",
+			"@media (min-width:768px) a",
+			"@media",
+			"@media (max",
+			".navbar-nav .open .dropdown-menu",
+			"col-xs-3 ",
+			"xs-3",
+			"<img src=\"stars.png\" class=\"img-responsive\">",
+			"<img src=\"stars.png\">",
+			"class=\"cover\"",
+			"col-xs-2",
+			"col-xs-6",
+			"md-2",
+			"img-responsive",
+			"col-md-2",
+			"col-md-6",
+			"col-xs-3",
+			"col-xs",
+			"center",
+			"col-xs-2 ",
+			"col-md-2 ",
+			"popmoviescarousel",
+			"newcarousel",
+			"col-xs-2",
+			"<img src=\"stars.png\">",
+			"col-sm-2",
+			"class=\"img-responsive\"",
+			"col-sm-2",
+			"coverxs",
+			"col-sm-2 ",
+			"class=\"cover\"",
+			"class=\"cover img-responsive\"",
+			"img-responsive",
+			"class=\"cover\"",
+			"popmoviescarousel",
+			"vertical-align:middle",
+			"z-index",
+			"navb",
+			"col-sm-3",
+			"428bca",
+			"register",
+			"                    <",
+			"option",
+			"18pt",
+			"home",
+			"12"
+		],
+		"highlight": false,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"streamline",
+			"password",
+			"username",
+			"col-xs-3 col-med-6 ",
+			"col-xs-3 col-med-6",
+			"xs-2",
+			"<img src=\"stars.png\" class=\"img-responsive center-block\">",
+			"<img src=\"stars.png\" class=\"img-responsive\">",
+			"class=\"img-responsive center-block\"",
+			"col-xs-3",
+			"col-xs-12",
+			"md-3",
+			"img-responsive center-block",
+			"col-md-1",
+			"col-md-2",
+			"col-md-6",
+			"col-sm",
+			"col-sm ",
+			"col-xs-3 ",
+			"col-xs-2 ",
+			"poptvcarousel",
+			"popmoviescarousel",
+			"col-xs-3",
+			"<img src=\"stars.png\" class=\"img-responsive center-block\">",
+			"col-xs-2",
+			"class=\"img-responsive center-block\"",
+			"col-sm-1",
+			"img-responsive",
+			"col ",
+			"col",
+			"",
+			"class=\"coverxs\"",
+			"class=\"cover\"",
+			"class=\"cover img-responsive\"",
+			"col-sm-2",
+			"li"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": false,
+		"whole_word": false,
+		"wrap": false
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 26.0
+	},
+	"input":
+	{
+		"height": 34.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 112.0
+	},
+	"project": "tree_node.sublime-project",
+	"replace":
+	{
+		"height": 48.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"routes",
+				"config/routes.rb"
+			],
+			[
+				"application.htm",
+				"app/views/layouts/application.html.erb"
+			],
+			[
+				"",
+				"~/Dropbox/MEDP 341/Assignment 02/index.html"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": false,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 220.0,
+	"status_bar_visible": false,
+	"template_settings":
+	{
+	}
+}
