@@ -33,7 +33,7 @@ int main(int argc, const char * argv[]) {
     if (argc == 2) {
     
         // Open file
-        string fName = argv[1];''
+        string fName = argv[1];
         ifstream readf;
         readf.open("organisms.txt");
         
@@ -109,7 +109,7 @@ int main(int argc, const char * argv[]) {
         cerr << "     ./binary_tree organisms.txt" << endl;
         cerr << "where organisms.txt is the name of your input file." << endl;
 
-        exit(-1)''
+        exit(-1);
     }
     
     return 0;
