@@ -235,6 +235,27 @@ int binary_tree::height_of_node(tree_node *tn_ptr) const {
     Constructor Helper Functions
  ******************************************************************************/
 
+/* Iterates through the list of binary trees, compares the score in the root of
+each tree to the scores in the roots of the trees after it in the list. In this
+way, the root score of each tree is compared to that of every other tree in the
+list by taking the absolute value of the difference between the scores.
+    The variable smallest_diff is initially set to 0 as two species can't have
+the same score. Two iterators it_tree1 and it_tree2 keep track of the positions
+in the list of the trees with the smallest difference.
+    As the function iterates through this list and makes comparisons,
+smallest_diff is updated, first to the value of the first difference, then
+consequently only if the value of the difference between any two trees' roots'
+scores is smaller than smallest_diff. The two iterators are also updated to
+point to the two trees with the smallest difference.
+    When each tree has been compared to every other tree, we have the true
+value of smallest_diff and pointers to the two trees in the list whose root's
+scores are closest together. Copies are made of these trees and they are removed
+from the list. The copies are combined together into one tree using a protected
+constructor that creates a new root node using combined data from the two trees
+(average score and a combined name concatenating the first 3 letters of the name
+of the root of each tree) and attaches the two trees to this new root as its
+left and right subtrees. This combined copy is added to the end of the list.
+*/
 void binary_tree::find_and_combine_closest_trees(list<binary_tree> &trees) throw(invalid_argument, bad_alloc) {
 
     if (trees.empty()){
@@ -318,7 +339,16 @@ void binary_tree::find_and_combine_closest_trees(list<binary_tree> &trees) throw
     Functions to print the tree to console
  ******************************************************************************/
 
-/* A protected function that */
+/* A protected function that outputs the contents and structure of the tree as a
+single line string. Any trees with height > 0 make recursive calls to the
+print_tree function with its left and right subtrees. These recursive calls are
+nested within balanced parentheses and the calls with the left and right
+subtrees are separated by a comma. The function keeps making recursive calls
+until a subtree of height 0 (i.e. a leaf node) which simply prints out the name
+stored in the node. This allows the function to return a string that contains
+the name of each organism originally inputted into the tree, and shows the
+structure of the trees using balanced parentheses.
+*/
 string binary_tree::print_tree(tree_node *tn_ptr) const throw(invalid_argument) {
     
     // If tree node is not a leaf node, recursively call the print function on
@@ -336,7 +366,7 @@ string binary_tree::print_tree(tree_node *tn_ptr) const throw(invalid_argument) 
 }
  
 /* A friend function that overloads the << operator to print out the names of
- the leaf nodes in the tree using the print_tree function*/
+ the leaf nodes in the tree using the print_tree() function*/
 ostream & operator << (ostream &os, const binary_tree &tree){
     
     os << tree.print_tree(tree.get_root_ptr()) << endl;
