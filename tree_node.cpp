@@ -10,7 +10,7 @@
 
 #include "tree_node.h"
 
-/* Creates an empty tree node */
+/* Creates an empty tree node with NULL left and right pointers*/
 tree_node::tree_node(){
     left = NULL;
     right = NULL;
