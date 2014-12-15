@@ -243,8 +243,8 @@ public:
     Destroys tree and deallocates any memory.
         @pre        tree is an intialized, non-empty binary_tree
         @post       Tree data is purged, memory used to store tree is
-                    deallocated. There are no memory leaks or dangling pointers.
-   */
+                    deallocated to ensure no memory leaks or dangling pointers.
+    */
     ~binary_tree ();
     
 
