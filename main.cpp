@@ -6,7 +6,7 @@
  Description    : Constructs a binary tree from a given input file of organisms
                     and their genome scores. This binary tree represents how
                     closely related an organism is to others based on their 
-                    genome scores.
+                    genome scores. 
  
  Purpose        : To demonstrate an implementation of a binary tree class.
  
