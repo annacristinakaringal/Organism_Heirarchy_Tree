@@ -47,5 +47,5 @@ The program is run from the command line using `./binary_tree organisms.txt` whe
 
 To Do
 -----
-* Include score of each species in 
+* Include score of each species in string representation output
 * Introduce some sort of ordering to the evolutionary tree
