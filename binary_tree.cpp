@@ -10,8 +10,21 @@
 
 #include "binary_tree.h"
 
+/******************************************************************************
+    Constructors
+ ******************************************************************************/
+ 
+/* Constructs an empty tree */
 binary_tree::binary_tree() { root = NULL; }
 
+/* Constructs a single node tree from a single string organism containing the
+name and score of a single organism separated by whitespace. 
+    Creates a stringstream from organism and splits string into name and score.
+Verifies both name and score are non-empty and that score is a positive decimal
+number. Else, throws exceptions. Creates and allocates space for a new tree_node
+containing name and score and sets the new tree's root pointer to point to this
+new tree_node.
+*/
 binary_tree::binary_tree(string organism) throw(invalid_argument, bad_alloc) {
     
     istringstream orgss(organism);
@@ -60,6 +73,19 @@ binary_tree::binary_tree(string organism) throw(invalid_argument, bad_alloc) {
     root = r;
 }
 
+/* Takes a non-empty list of single node binary trees. Finds the two trees, t1
+and t2 whose roots have scores that are the closest together from all the trees
+in the list. Removes these trees, combines them together into a tree whose root
+node contains the average of their two scores and a combined name consisting of
+the first 3 letters of each tree's roots name. This new tree also contains a 
+copy of t1 and t2 as its left and right subtrees. The new tree is appended to
+the input list of binary trees. 
+    Function keeps combining the two closest trees in the list until the list
+only contains one tree. This tree is a representation of the closeness and
+relationships between all the original single node trees. Space for a new copy 
+of this tree is allocated and the root of our tree is set to point to the root
+of this new tree.
+*/
 binary_tree::binary_tree (list<binary_tree> &trees) throw (invalid_argument, bad_alloc){
     
     if (trees.empty()){
@@ -89,8 +115,12 @@ binary_tree::binary_tree (list<binary_tree> &trees) throw (invalid_argument, bad
 }
 
 
-/* Creates new tree with combined values of the root nodes of the two input
- trees as its root node. Attaches input trees as its left & right subtrees */
+/* A protectd constructor that creates a new tree with combined values of the
+root nodes of the two input trees as its root node. The root score is an
+average of the scores of the roots of the two trees and the root name is created
+by concatening the first three letters of t1 with the first three letters of t2.
+A copy of the input trees are attached to the new tree as its left & right
+subtrees */
 binary_tree::binary_tree(binary_tree &tree1, binary_tree &tree2)  throw (bad_alloc){
     
     // Create & allocate new root node with combined name and average score of two trees.
@@ -115,8 +145,11 @@ binary_tree::binary_tree(binary_tree &tree1, binary_tree &tree2)  throw (bad_all
     
 }
 
-/* A protected copy constructor function that traverses the tree in pre-order 
- and creates a new copy of each node */
+/* A copy constructor function that recursively traverses the tree rooted at
+tn_ptr in pre-order. Creates a new copy of each node to create a new tree
+identical to the one rooted at tn_ptr in data and structure, but rooted at
+new_ptr instead.
+*/
 void binary_tree::copy_tree(tree_node *tn_ptr, tree_node *&new_ptr) const  throw (bad_alloc){
 
     // A non-empty tree
@@ -141,10 +174,14 @@ void binary_tree::copy_tree(tree_node *tn_ptr, tree_node *&new_ptr) const  throw
     }
 }
 
-/* A public wrapper copy constructor function */
+/* A public wrapper for the copy constructor function */
 binary_tree::binary_tree(const binary_tree &tree){
     copy_tree(tree.get_root_ptr(), root);
 }
+
+/******************************************************************************
+    Destructors
+ ******************************************************************************/
 
 /* A protected destructor function that traverses the tree in post-order and 
  destroys each node */
@@ -165,6 +202,10 @@ void binary_tree::destroy(tree_node *&tn_ptr){
 /* A public wrapper destructor function*/
 binary_tree::~binary_tree() { destroy(root); }
 
+/******************************************************************************
+    Variable/Characteristic Accessors
+ ******************************************************************************/
+
 /* Returns a pointer to the tree's root */
 tree_node* binary_tree::get_root_ptr() const { return root; }
 
@@ -174,10 +215,12 @@ float binary_tree::get_root_score() const { return root->score; }
 /* Returns a copy of the root node's name value */
 string binary_tree::get_root_name() const { return root->name; }
 
-/* Returns height of a node in the tree */
+/* Returns height of the tree rooted at tn_ptr. Recursively obtains the largest
+height of each subtree and increments by 1 edge to account for the path from the
+node to the subtree */
 int binary_tree::height_of_node(tree_node *tn_ptr) const {
     
-    // If both subtrees are NULL, tn_ptr points to a leaf node
+    // Base case: If both subtrees are NULL, tn_ptr points to a leaf node
     if (tn_ptr->left== NULL && tn_ptr->right == NULL) {
         return 0;
     }
@@ -187,6 +230,10 @@ int binary_tree::height_of_node(tree_node *tn_ptr) const {
         return 1 + max(height_of_node(tn_ptr->left), height_of_node(tn_ptr->right));
     }
 }
+
+/******************************************************************************
+    Constructor Helper Functions
+ ******************************************************************************/
 
 void binary_tree::find_and_combine_closest_trees(list<binary_tree> &trees) throw(invalid_argument, bad_alloc) {
 
@@ -267,6 +314,10 @@ void binary_tree::find_and_combine_closest_trees(list<binary_tree> &trees) throw
     
 }
 
+/******************************************************************************
+    Functions to print the tree to console
+ ******************************************************************************/
+
 /* A protected function that */
 string binary_tree::print_tree(tree_node *tn_ptr) const throw(invalid_argument) {
     
@@ -283,9 +334,9 @@ string binary_tree::print_tree(tree_node *tn_ptr) const throw(invalid_argument) 
         throw invalid_argument("Nothing to print");
     }
 }
-
+ 
 /* A friend function that overloads the << operator to print out the names of
- the leaf nodes in the tree */
+ the leaf nodes in the tree using the print_tree function*/
 ostream & operator << (ostream &os, const binary_tree &tree){
     
     os << tree.print_tree(tree.get_root_ptr()) << endl;
