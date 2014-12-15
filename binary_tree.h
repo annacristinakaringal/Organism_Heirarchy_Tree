@@ -20,7 +20,7 @@
                         score and height of tree.
                     - Functions to print a binary tree to console
 
- Last Modified:     December 14, 2014
+ Last Modified:     December 14, 2014 
  
  *****************************************************************************/
 

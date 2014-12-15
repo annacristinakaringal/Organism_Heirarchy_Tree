@@ -63,7 +63,7 @@ private:
                     right_tree are either NULL or non-empty tree_nodes.
         @post       A new tree_node whose name and score variables are n and s
                     respectively and whose left and right pointers point to
-                    left_tree and right_tree respectively.
+                    left_tree and right_tree respectively. 
    */
     tree_node(const string &n, const float &s, tree_node *left_tree = NULL, tree_node *right_tree = NULL);
     
