@@ -88,17 +88,6 @@ binary_tree::binary_tree (list<binary_tree> &trees) throw (invalid_argument, bad
 
 }
 
-/* Creates new tree with given tree node as root and input trees as subtrees */
-binary_tree::binary_tree (tree_node *tn_ptr, binary_tree &left_tree, binary_tree &right_tree) {
-    
-    // root node ptr points to object tn_ptr is pointing to
-    root = tn_ptr;
-    
-    // root node points to left and right trees
-    root->left = left_tree.get_root_ptr();
-    root->right = right_tree.get_root_ptr();
-}
-
 
 /* Creates new tree with combined values of the root nodes of the two input
  trees as its root node. Attaches input trees as its left & right subtrees */
@@ -279,7 +268,7 @@ void binary_tree::find_and_combine_closest_trees(list<binary_tree> &trees) throw
 }
 
 /* A protected function that */
-string binary_tree::print_tree(tree_node *tn_ptr) const {
+string binary_tree::print_tree(tree_node *tn_ptr) const throw(invalid_argument) {
     
     // If tree node is not a leaf node, recursively call the print function on
     // its left and right subtrees until reach a leaf node
@@ -289,6 +278,9 @@ string binary_tree::print_tree(tree_node *tn_ptr) const {
     // Single node tree or leaf node: Print name of organism
     else if (height_of_node(tn_ptr) == 0) {
         return tn_ptr->name;
+    }
+    else {
+        throw invalid_argument("Nothing to print");
     }
 }
 
