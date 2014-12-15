@@ -1,7 +1,0 @@
-ape 11.0
-tiger    50.0
-lion   55.0
-human   9.0
-elephant   76.0
-monkey  14.0
-rhino 111d.9098
